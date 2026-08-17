@@ -39,7 +39,7 @@ requirements:
     - gcsfs >=2023.10.0
     - google-ads >=26.0.0,!=28.0.0.post2
     - google-analytics-admin >=0.9.0
-    - google-api-core >=2.11.0,!=2.16.0,!=2.18.0
+    - google-api-core >=2.11.0,!=2.16.0,!=2.18.0  # apache-airflow-providers-google 22.3.0 has requirement google-api-core>=2.30.3, but you have google-api-core 2.29.0.
     - google-api-python-client >=2.0.2
     - google-auth >=2.29.0
     - google-auth-httplib2 >=0.0.1
@@ -47,11 +47,11 @@ requirements:
 
     # google-cloud-aiplatform[evaluation]
     - pandas >=1.0.0
-    - scikit-learn <1.6.0
+    - scikit-learn <1.6.0  # apache-airflow-providers-google 22.3.0 has requirement scikit-learn>=1.6.0, but you have scikit-learn 1.5.2.
     - jsonschema
     - ruamel.yaml
     - pyyaml
-    - litellm >=1.72.4
+    - litellm >=1.72.4  # apache-airflow-providers-google 22.3.0 has requirement litellm<1.86.0,>=1.83.7; python_version < "3.14", but you have litellm 1.73.6.
 
     # more restrictive for python <3.13
     - ray-default >=2.42.0
@@ -69,7 +69,7 @@ requirements:
     - google-cloud-dataflow-client >=0.8.6
     - google-cloud-dataform >=0.5.0
     - google-cloud-dataplex >=2.6.0
-    - google-cloud-dataproc >=5.21.0
+    - google-cloud-dataproc >=5.21.0  # apache-airflow-providers-google 22.3.0 has requirement google-cloud-dataproc>=5.27.0, but you have google-cloud-dataproc 5.24.0.
     - google-cloud-dataproc-metastore >=1.12.0
     - google-cloud-dlp >=3.12.0
     - google-cloud-kms >=2.15.0
